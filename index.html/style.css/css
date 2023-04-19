@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    height: 40%;
+    width: 50%;
+    border: 3px solid rgba(8, 8, 8, 0.801);
+    border-radius: 50px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list{
+width: 70%;
+display: flex;
+align-items: center;
+}
+
+.nav-list li{
+list-style: none;
+padding: 26px 30px;
+}
+
+.nav-list li a{
+text-decoration: none;
+color: white;
+font-size: 20px;
+font-family:  'Ubuntu', sans-serif;;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color:gray;
+    }
+    
+.rightNav{
+    width: 30%;
+    text-align: right;
+    padding: 23px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../img/boy3.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstsection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 90%;
+}
+
+.firstHalf{
+width: 75%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.SecondHalf{
+width: 50%;
+}
+
+.SecondHalf img{
+width: 70%;
+border: 4px solid rgb(0, 0, 0);
+border-radius: 150px;
+display: block;
+margin: auto;
+float: right;
+}
+
+.text-big{
+font-size: 50px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-smal{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn{
+    padding: 15px 15px;
+    margin: 7px 3px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+
+.btn-dark{
+    color: black;
+    border:2px solid gray;
+}
+
+ .secright{
+    height: 500px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+ }
+
+ .sectionsubtag{
+    font-size: 25px;
+    float: left;
+    color: black;
+ }
+
+ .paras{
+    padding: opx 65px;
+ }
+
+ .thumbnal img{
+    width: 300px;
+    height: 300px;
+    border-radius: 26px;
+    margin-top: 19px;
+ }
+
+ .contact{
+    background-color:#f6f5f4;
+    height: 660px;
+ }
+
+ .text-center{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+ }
+
+ .form{
+    max-width: 62%;
+    margin: 25px auto;
+ }
+
+ .form-input{
+    margin: 14px 0;
+    width: 100%;
+    padding: 5px 3px;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ .text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;  
+    display: flex;
+    justify-content: center;
+    color: white;
+ }
+
+ .burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+ }
+ .line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+ }
+
+ @media only screen and (max-width: 1250px){
+    .nav-list{
+        flex-direction:column ;
+    }
+    .navbar{
+        height: 500px;
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+    }
+    .logo img{
+        height: 70%;
+        width: 70%;
+        border: 3px solid rgba(8, 8, 8, 0.801);
+        border-radius: 50px; 
+    }
+    .rightNav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    #search{
+        width: 100%;
+    }
+    .SecondHalf img{
+        width: 13%;
+    }
+
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+        height: 100%;
+    }
+    .SecondHalf img{
+        width: 20%;
+    }
+ }
